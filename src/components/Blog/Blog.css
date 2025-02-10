@@ -1,0 +1,129 @@
+.Blog .row .col-3:nth-of-type(1) .ti{
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.Blog .row .col-3:nth-of-type(1) .ti::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -10px;
+    left: 0;
+}
+.Blog .row .col-3:nth-of-type(1) div{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.Blog .row .col-3:nth-of-type(1) div p:not(:last-of-type){
+    opacity: 0.8;
+    transition: 0.5s;
+    border-bottom: 2px dotted #fff;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.Blog .row .col-3:nth-of-type(1) div p:last-of-type{
+    opacity: 0.8;
+    transition: 0.5s;
+   
+    width: 100%;
+    padding-bottom: 10px;
+}
+.Blog .row .col-3:nth-of-type(1) div p:hover{
+    opacity: 1;
+    color: var(--main-color);
+}
+
+ .Blog .col-3 .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.Blog .card1 img{
+    width: 100px;
+}
+.details{
+    width: max-content;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.Blog  .card{
+    background-color: transparent;
+    border: 2px solid #444343;
+    border-radius: 0px 0px 15px 15px;
+    position: relative;
+    width: calc((100% - 10px) /2);
+}
+.Blog  .card .card-body b:nth-of-type(1){
+    color: #fff;
+    text-transform: uppercase;
+}
+.Blog  .card .card-body p:nth-of-type(1){
+    color: #545353;
+    margin-top: 8px;
+    padding-bottom: 20px;
+    border-bottom: #ffffff84 dotted 2px;
+}
+
+.Blog  .card .card-body div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #757474;
+}
+.Blog  .card  .date{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 8px 15px;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.Blog  .card  .date span{
+    color: var(--main-color);
+}
+.Blog  .card:hover .date{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+
+
+@media (max-width : 992px ) {
+    .Blog{
+        flex-direction: column !important;
+    }
+    .Blog .col-3{
+        width: 100%;
+    }
+    .Blog .col-9{
+        width: 100%;
+    }
+}
+@media (max-width : 767px ) {
+    .Blog  .card{
+      
+        width: 100%;
+    }
+    
+}

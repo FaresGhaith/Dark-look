@@ -1,0 +1,45 @@
+.Latest  .card{
+    background-color: transparent;
+    border: 2px solid #444343;
+    border-radius: 0px 0px 15px 15px;
+    position: relative;
+}
+.Latest  .card .card-body b:nth-of-type(1){
+    color: #fff;
+    text-transform: uppercase;
+}
+.Latest  .card .card-body p:nth-of-type(1){
+    color: #545353;
+    margin-top: 8px;
+    padding-bottom: 20px;
+    border-bottom: #ffffff84 dotted 2px;
+}
+
+.Latest  .card .card-body div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #757474;
+}
+.Latest  .card  .date{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 8px 15px;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.Latest  .card  .date span{
+    color: var(--main-color);
+}
+.Latest  .card:hover .date{
+    opacity: 1;
+    transform: rotate(360deg);
+}

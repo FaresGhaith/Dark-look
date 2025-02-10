@@ -1,0 +1,130 @@
+.Cart .row .col-3:nth-of-type(1){
+    padding: 15px;
+    
+}
+.Cart .row .col-3:nth-of-type(1) .ti{
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.Cart .row .col-3:nth-of-type(1) .ti::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -10px;
+    left: 0;
+}
+.Cart .row .col-3:nth-of-type(1) div{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.Cart .row .col-3:nth-of-type(1) div a:not(:last-of-type){
+    opacity: 0.8;
+    transition: 0.5s;
+    border-bottom: 2px dotted #fff;
+    width: 100%;
+    padding-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.Cart .row .col-3:nth-of-type(1) div a:last-of-type{
+    opacity: 0.8;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.Cart .row .col-3:nth-of-type(1) div a:hover{
+    opacity: 1;
+    color: var(--main-color);
+}
+
+table{
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+table thead{
+  text-transform: uppercase;
+  font-size: 20px;
+  opacity: 0.8;
+}
+table thead th{
+  padding: 10px;
+  border-right: 2px #fff solid;
+}
+
+table thead tr{
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+table tbody tr{
+  border-bottom: 1px solid #fff;
+
+}
+
+table td{
+  border-right: 1px solid #fff;
+}
+table td.image-col{
+  width: 30px;
+  padding: 10px;
+}
+table td.image-col img{
+  width: 100%;
+}
+td:nth-of-type(2),
+td:nth-of-type(3),
+td:nth-of-type(4),
+td:nth-of-type(5),
+td:nth-of-type(6){
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+td:nth-of-type(4){
+ padding: 30px;
+}
+td:nth-of-type(4) input{
+  width: 50%;
+}
+td:nth-of-type(4) div{
+  padding: 2px 6px;
+  color: #fff;
+  background-color: red;
+}
+
+.total{
+  display: flex;
+  align-items: center;
+justify-content: center;
+  border-radius: 8px;
+  
+}
+.total div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  border: 2px dotted #fff;
+  padding: 20px;
+}
+
+@media (max-width : 992px ) {
+  .Cart{
+      flex-direction: column !important;
+  }
+  .Cart .col-3{
+      width: 100%;
+  }
+}

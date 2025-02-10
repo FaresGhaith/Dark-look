@@ -1,0 +1,69 @@
+
+.product  {
+    position: relative;
+    overflow: hidden;
+}
+.product .proces{
+    position: absolute;
+    top: 20px;
+    left: -30%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.8s;
+    opacity: 0;
+}
+.product:hover .proces {
+    left: 2px;
+    opacity: 1;
+}
+  .product .proces::after{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    position: absolute;
+
+  }
+  .product .proces div{
+    font-size: 20px;
+    transition: 0.5s;
+    padding: 5px 10px;
+    
+  }
+  
+  
+  .product .proces div:hover{
+    color: var(--main-color);
+    animation: proc 1s infinite alternate;
+  }
+  @keyframes proc {
+    100%{
+        transform: scale(1.3);
+    }
+  }
+
+  .Featured .Fash{
+    overflow: hidden;
+    
+  }
+  .Featured .Fash img{
+    transition: 0.5s;
+    
+  }
+  .Featured .Fash:hover img{
+    transform: scale(1.1);
+  }
+
+
+  @media (max-width : 565px) {
+    .Featured ul{
+      display: none;
+    }
+  }

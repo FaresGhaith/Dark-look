@@ -1,0 +1,120 @@
+.Nav {
+    background-color: var(--nav-bac);
+    position: relative;
+}
+.men{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    display: none;
+}
+.Nav ul li{
+    list-style: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+.Nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.5s;
+    
+    cursor: pointer;
+}
+.Nav ul li:hover{
+    background-color: var(--main-color);
+}
+.Nav .Dropdown{
+    background-color: var(--nav-bac);
+    position: absolute;
+    width: 100%;
+    left: 12px;
+    top: 100%;
+    padding: 20px;
+    display: none;
+    z-index: 8;
+}
+.Nav ul li:nth-of-type(2):hover .Dropdown{
+    display: flex;
+}
+.Nav .Dropdown a{
+    color: #b6b6b6;
+    cursor: pointer;
+    display: block;
+    padding: 5px;
+    transition: 0.5s;
+}
+.Nav .Dropdown a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+.Nav ul li:nth-of-type(5){
+    position: relative;
+}
+.Nav ul li:nth-of-type(5):hover .Drop_down{
+    display: flex;
+}
+
+.Nav .Drop_down{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav-bac);
+    padding: 20px 20px;
+    display: none;
+    z-index: 8;
+    
+}
+.Nav .Drop_down div{
+    width: 100%;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.Nav .Drop_down a{
+    padding: 5px 15px;
+    transition: 0.5s;
+    width: 100%;
+    display:block;
+    cursor: pointer;
+
+}
+.Nav .Drop_down a:hover{
+    background-color: var(--main-color);
+}
+
+
+
+@media (max-width : 768px) {
+    .men{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        display: flex;
+    }
+    .Nav ul.active{
+        position: absolute;
+        left: 0;
+       top: 40px;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        border: var(--nav-bac) 1px solid;
+        width: 100%;
+        z-index: 6;
+    }
+    .Nav ul{
+      display: none;
+    }
+    .Nav ul li{
+        width: 100%;
+    }
+}

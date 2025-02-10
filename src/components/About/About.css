@@ -1,0 +1,116 @@
+.About .row .col-3:nth-of-type(1){
+    padding: 15px;
+    
+}
+.About .row .col-3:nth-of-type(1) .ti{
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.About .row .col-3:nth-of-type(1) .ti::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -10px;
+    left: 0;
+}
+.About .row .col-3:nth-of-type(1) div{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.About .row .col-3:nth-of-type(1) div a:not(:last-of-type){
+    opacity: 0.8;
+    transition: 0.5s;
+    border-bottom: 2px dotted #fff;
+    width: 100%;
+    padding-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.About .row .col-3:nth-of-type(1) div a:last-of-type{
+    opacity: 0.8;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.About .row .col-3:nth-of-type(1) div a:hover{
+    opacity: 1;
+    color: var(--main-color);
+}
+
+.btn1{
+    width: max-content;
+    padding: 5px 90px;
+    color: #fff;
+    background-color: green;
+    cursor: pointer;
+}
+
+.skills-container {
+    width: 80%;
+    margin: auto;
+}
+.skill {
+    margin-bottom: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.skill-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+.skill-text {
+    position: relative;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+.html { width: 80%; background-color: #3498db; }
+.css { width: 90%; background-color: #e74c3c; }
+.javascript { width: 65%; background-color: #777; }
+.jquery { width: 50%; background-color: #f39c12; }
+.bootstrap { width: 95%; background-color: #2ecc71; }
+.reactjs { width: 75%; background-color: #207d73; }
+
+
+
+.swip .card{
+    background-color: black;
+    padding: 5px;
+}
+.swip .card b{
+    color: #fff;
+    font-size: 30px;
+}
+.swip .card p{
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+
+@media (max-width : 992px ) {
+    .About{
+        flex-direction: column !important;
+    }
+    .About .col-3{
+        width: 100%;
+    }
+}

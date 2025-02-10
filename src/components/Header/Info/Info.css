@@ -1,0 +1,51 @@
+.Info {
+    color: #b6b6b6;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+}
+.Info .flex .gap-3 > div{
+    position: relative;
+}
+.Info .flex .gap-3 > div .Drop{
+    position: absolute;
+    width: 160px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav-bac);
+    left: 0;
+    top: 145%;
+    display: none;
+    z-index: 7;
+}
+.Info .flex .gap-3 > div .Drop.open{
+    display: flex;
+}
+.Info .flex .gap-3 > div .Drop p{
+    margin: 0;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.Info .flex .gap-3 > div .Drop p:hover{
+    background-color: var(--main-color);
+    color: var(--withe-colo);
+    cursor: pointer;
+}
+
+
+@media (max-width : 768px) {
+    .Info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Info .hh{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .Info .hi{
+        display: none;
+    }
+}

@@ -1,0 +1,144 @@
+footer{
+    margin-top: 100px;
+    width: 100%;
+    background-color: var(--nav-bac);
+    height: 580px;
+}
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 100px;
+}
+footer .top > div:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .top > div:nth-of-type(1) b{
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+footer .top > div:nth-of-type(1) p{
+    opacity: 0.6;
+}
+footer .top > div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .top > div:nth-of-type(2) input{
+    width: 300px;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0;
+    font-size: 16px;
+    position: relative;
+}
+footer .top > div:nth-of-type(2) div{
+    background-color: black;
+    color: white;
+    padding: 14px;
+}
+
+footer .center {
+    width: 90%;
+}
+footer .center .col-3 b{
+    text-transform: uppercase;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+footer .center .col-3 div p{
+    text-wrap: nowrap;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+footer .center .col-3 div p:hover{
+    opacity: 1;
+    color: var(--main-color);
+}
+footer .bottom{
+    margin-top: 40px;
+    width: 110%;
+    border-radius: 10px;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px ;
+}
+footer .bottom .icons1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.6;
+}
+ .icon{
+    transition: 0.5s;
+    cursor: pointer;
+}
+ .icon:hover{
+    transform: scale(1.2);
+    color: var(--main-color);
+    opacity: 2;
+}
+
+@media (max-width : 1010px ) {
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer .top{
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        
+    }
+    footer .top > div:nth-of-type(2) input{
+        width: 100px;
+        height: 50px;
+        padding: 0 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px 0 0;
+        font-size: 16px;
+        position: relative;
+    }
+    footer .top > div:nth-of-type(1) b{
+        text-wrap: nowrap;
+    }
+    footer .col-3{
+        width: 100%;
+    }
+    footer .row{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    footer .row .col-3 div{
+        display: none;
+    }
+    footer .bottom > b {
+        display: none;
+    }
+    footer .bottom {
+        display: none;
+    }
+}
